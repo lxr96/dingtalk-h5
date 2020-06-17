@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>首页</title>
+    <link rel="stylesheet" href="/css/weui.css"/>
+    <link rel="stylesheet" href="/css/weuix.css"/>
+    <script type="text/javascript" src="/js/jquery-1.11.1.min.js"></script>
+    
+    
+    <script type="text/javascript" src="/js/result.js"></script>
+    <script type="text/javascript" src="/js/zepto.min.js"></script>
+    <script type="text/javascript" src="/js/zepto.weui.js"></script>
+</head>
+<body ontouchstart>
+<div class="weui-header bg-blue"> 
+   <h1 class="weui-header-title"><b>文件验证</b></h1>
+</div>
+<div id="loadingDIV">
+
+<p id="QRTEXT" th:text="${qrtext}" hidden></p>
+
+<div class="page-hd">
+
+</div>
+<div class="weui-msg">
+    <div class="weui-msg__icon-area"></div>
+    <div class="weui-msg__text-area">
+        <h2 class="weui-msg__title"><b id="tips">扫描失败</b></h2>
+    </div>
+</div><br>
+<div class="weui-footer weui-footer_fixed-bottom">
+    <a href="/index" class="weui-btn weui-btn_ts"><b><span class="icon icon-86"></span>扫一扫</b></a>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>首页</title>
+    <script type="text/javascript" src="/js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="/js/result.js"></script>
+    <link rel="stylesheet" href="/css/weui.css"/>
+    <link rel="stylesheet" href="/css/weuix.css"/>
+    
+    <script type="text/javascript" src="/js/zepto.min.js"></script>
+    <script type="text/javascript" src="/js/zepto.weui.js"></script>
+    
+</head>
+<body>
+hello!<p th:text="${hello}"></p>
+<p th:text="${data.documentCode}"></p>
+<div th:object="${data}">
+ <p>编码: <span th:text="*{documentCode}">Sebastian</span>.</p>
+ <p>版本状态: <span th:text="*{versionState}">Sebastian</span>.</p>
+ <p>版本日期: <span th:text="*{versionDate}">Pepper</span>.</p>
+ <p>版本: <span th:text="*{version}">Saturn</span>.</p>
+</div>
+</body>
+</html>
